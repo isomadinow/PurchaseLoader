@@ -26,7 +26,7 @@ namespace PurchaseLoaderApp
         /// Включение режима отладки.
         /// По умолчанию отладка выключена.
         /// </summary>
-        [Option('d', "debug", Default = false, HelpText = "Включить режим отладки.")]
+        [Option('d', "debug", Default = true, HelpText = "Включить режим отладки.")]
         public bool Debug { get; set; }
     }
 }

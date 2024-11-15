@@ -1,6 +1,8 @@
 ﻿# PurchaseLoaderApp
 
-**PurchaseLoaderApp** — консольное приложение для загрузки данных о закупках из веб-страниц и XML-файлов, а также для их сохранения в базу данных PostgreSQL.
+**PurchaseLoaderApp** — консольное приложение для загрузки данных о закупках из веб-страниц и XML-файлов, а также для их сохранения в базу данных PostgreSQL. 
+
+Название БД: **ProcurementDb** 
 
 ---
 
@@ -18,40 +20,56 @@
 ## Структура проекта
 
 ```
-PurchaseLoaderApp
-│   App.config                   # Конфигурация приложения (строки подключения).
-│   Options.cs                   # Класс для работы с параметрами командной строки.
-│   packages.config              # Зависимости проекта.
-│   pathconfig.json              # Конфигурация путей по умолчанию (XML и Web).
-│   Program.cs                   # Точка входа в приложение.
+
+PurchaseLoader
 │
-├───Factory
-│       PurchaseLoaderFactory.cs # Фабрика для создания загрузчиков (Web/XML).
+├── .gitattributes              
+├── .gitignore              
+├── PurchaseLoader.sln           # Файл решения Visual Studio.
+├── README.md                    # Документация проекта.
 │
-├───Interfaces
-│       IPurchaseLoader.cs       # Интерфейс для загрузчиков данных.
+├── Files                     
+│   ├── 0123200000319002908.xml 
+│   ├── dbase.sql                # Дамп базы данных PostgreSQL.
+│   └── Задача.txt               # Описание задачи.
 │
-├───Loaders
-│       WebPurchaseLoader.cs     # Логика загрузки данных с веб-страницы.
-│       XmlPurchaseLoader.cs     # Логика загрузки данных из XML-файла.
+├── PurchaseLoaderApp            # Основной проект приложения.
+│   ├── App.config               # Конфигурация приложения (строки подключения).
+│   ├── Options.cs               # Класс для работы с параметрами командной строки.
+│   ├── packages.config          # Зависимости проекта.
+│   ├── pathconfig.json          # Конфигурация путей по умолчанию (XML и Web).
+│   ├── Program.cs               # Точка входа в приложение.
 │
-├───Models
-│       Customer.cs              # Класс модели заказчика.
-│       Purchase.cs              # Класс модели закупки.
+├── Factory                      # Паттерн "Фабрика" для создания загрузчиков.
+│   └── PurchaseLoaderFactory.cs # Фабрика для создания загрузчиков (Web/XML).
 │
-├───Services
-│       DatabaseService.cs       # Логика взаимодействия с базой данных PostgreSQL.
 │
-├───Utilities
-│       OptionsHandler.cs        # Обработка недостающих параметров командной строки.
+├── Interfaces                   # Интерфейсы для расширяемости проекта.
+│   └── IPurchaseLoader.cs       # Интерфейс для загрузчиков данных.
 │
-├───Utilities/Config
-│       AppConfig.cs             # Класс для конфигурации приложения.
-│       AppConfigLoader.cs       # Логика загрузки конфигурации из JSON.
-│       DefaultPaths.cs          # Конфигурация путей по умолчанию.
+├── Loaders                      # Логика загрузки данных.
+│   ├── WebPurchaseLoader.cs     # Логика загрузки данных с веб-страницы.
+│   └── XmlPurchaseLoader.cs     # Логика загрузки данных из XML-файла.
 │
-└───Utilities/Logging
-        Logger.cs                # Класс для логирования сообщений.
+├── Models                       # Классы моделей для работы с данными.
+│   ├── Customer.cs              # Класс модели заказчика.
+│   └── Purchase.cs              # Класс модели закупки.
+│
+│
+├── Services                     # Логика работы с базой данных.
+│   └── DatabaseService.cs       # Логика взаимодействия с базой данных PostgreSQL.
+│
+├── Utilities                    # Утилиты и вспомогательные классы.
+│   └── OptionsHandler.cs        # Обработка недостающих параметров командной строки.
+│
+├── Config                       # Конфигурационные классы и их обработка.
+│   ├── AppConfig.cs             # Класс для конфигурации приложения.
+│   ├── AppConfigLoader.cs       # Логика загрузки конфигурации из JSON.
+│   └── DefaultPaths.cs          # Конфигурация путей по умолчанию.
+│
+└── Logging                      # Логирование выполнения.
+    └── Logger.cs                # Класс для логирования сообщений.
+
 ```
 
 ---
@@ -67,17 +85,28 @@ PurchaseLoaderApp
 | **Npgsql**                         | 6.x            | ADO.NET-драйвер для работы с PostgreSQL.                     |
 | **Selenium.WebDriver**             | 4.x            | Для автоматизации браузера (загрузка данных с веб-страниц).  |
 
+---
 
-### Установка зависимостей
+## Установка зависимостей
 
-Насколько сработает не знаю, у меня срабатывало, из за того что почти одинаковое окружение.
+### Обновление NuGet пакетов
+Если вы клонируете проект из репозитория, сначала убедитесь, что все зависимости обновлены. Для этого:
 
-При сборке проекта все зависимости будут автоматически загружены из `packages.config`.
-Если вы добавляете новый компьютер или окружение, выполните:
+1. Откройте **Visual Studio** и перейдите в **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**.
+2. Во вкладке **Installed** проверьте список пакетов. Нажмите **Update All**, чтобы обновить все зависимости.
 
-```bash
-nuget restore PurchaseLoaderApp.sln
-```
+Или воспользуйтесь **Package Manager Console**:
+
+1. Откройте **Tools > NuGet Package Manager > Package Manager Console**.
+2. Выполните команду для обновления всех пакетов:
+   ```powershell
+   Update-Package
+   ```
+3. Если требуется восстановить недостающие пакеты:
+   ```powershell
+   Update-Package -reinstall
+   ```
+
 ---
 
 ## Установка и запуск
@@ -92,7 +121,7 @@ nuget restore PurchaseLoaderApp.sln
 ### Запуск
 Перейдите в папку `bin\Debug` и выполните команду:
 ```bash
-PurchaseLoaderApp.exe --type web --source "https://example.com" --debug
+.\PurchaseLoaderApp.exe --type web --source "https://tenmon.ru/1/0123200000319002908"" --debug
 ```
 
 ---
@@ -147,8 +176,20 @@ PurchaseLoaderApp.exe --type web --source "https://example.com" --debug
 
 ---
 
-### Примечание
+## Примечания
 
-Для корректной работы Selenium убедитесь, что:
-- Установлена последняя версия **Google Chrome**.
-- Драйвер `chromedriver.exe` в папке `bin\Debug` соответствует вашей версии Chrome. 
+### 1. Selenium и `chromedriver.exe`
+- Для корректной работы Selenium убедитесь, что:
+  - Драйвер `chromedriver.exe` находится в папке `bin\Debug`.
+  - Драйвер соответствует установленной версии браузера Chrome.
+- Если вы клонируете репозиторий, файл `chromedriver.exe` будет отсутствовать из-за настроек `.gitignore`. Загрузите соответствующий драйвер вручную [здесь](https://chromedriver.chromium.org/downloads) и поместите его в папку `bin\Debug`.
+
+### 2. PostgreSQL
+Убедитесь, что PostgreSQL настроен и доступен. Для этого проверьте строку подключения в файле `App.config`:
+```xml
+<connectionStrings>
+	<add name="PurchaseLoaderDbConnection" connectionString="Host=localhost;Port=5432;Database=ProcurementDb;Username=postgres;Password=password;" providerName="Npgsql" />
+</connectionStrings>
+```
+
+При необходимости обновите `Host`, `Database`, `Username`, и `Password` в зависимости от ваших настроек.

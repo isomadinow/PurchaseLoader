@@ -21,16 +21,6 @@
         public string INN { get; set; }
 
         /// <summary>
-        /// Регистрационный номер организации заказчика.
-        /// </summary>
-        public string RegNum { get; set; }
-
-        /// <summary>
-        /// Номер записи в реестре консорциума заказчика.
-        /// </summary>
-        public string ConsRegistryNum { get; set; }
-
-        /// <summary>
         /// Идентификатор связанной закупки в базе данных.
         /// </summary>
         public int PurchaseId { get; set; }

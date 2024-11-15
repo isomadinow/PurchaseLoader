@@ -34,11 +34,6 @@ namespace PurchaseLoaderApp.Models
         public DateTime PublicationDate { get; set; }
 
         /// <summary>
-        /// Информация о предмете закупки (детальное описание).
-        /// </summary>
-        public string PurchaseObjectInfo { get; set; }
-
-        /// <summary>
         /// Список заказчиков, связанных с закупкой.
         /// </summary>
         public ICollection<Customer> Customers { get; set; }

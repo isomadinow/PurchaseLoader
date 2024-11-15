@@ -91,12 +91,12 @@ namespace PurchaseLoaderApp
             string createPurchasesTableQuery = @"
                 CREATE TABLE IF NOT EXISTS purchases (
                     id SERIAL PRIMARY KEY,
-                    purchase_number VARCHAR(50) NOT NULL,
+                    purchase_number VARCHAR(60) NOT NULL,
                     purchase_name VARCHAR(200),
-                    starting_price DECIMAL(10, 2),
-                    publication_date DATE,
-                    purchase_object_info TEXT
+                    starting_price DECIMAL(10, 3),
+                    publication_date DATE
                 )";
+            Logger.Debug($"SQL-запрос: {createPurchasesTableQuery}");
             dbConnection.Execute(createPurchasesTableQuery);
             Logger.Debug("Таблица 'purchases' проверена/создана.");
 
@@ -104,11 +104,10 @@ namespace PurchaseLoaderApp
                 CREATE TABLE IF NOT EXISTS customers (
                     id SERIAL PRIMARY KEY,
                     organization_name VARCHAR(200),
-                    inn VARCHAR(50),
-                    reg_num VARCHAR(50),
-                    cons_registry_num VARCHAR(50),
+                    inn VARCHAR(100),
                     purchase_id INT REFERENCES purchases(id) ON DELETE CASCADE
                 )";
+            Logger.Debug($"SQL-запрос: {createCustomersTableQuery}");
             dbConnection.Execute(createCustomersTableQuery);
             Logger.Debug("Таблица 'customers' проверена/создана.");
         }
@@ -123,6 +122,7 @@ namespace PurchaseLoaderApp
         private int? GetExistingPurchaseId(string purchaseNumber, IDbConnection dbConnection, IDbTransaction transaction)
         {
             string selectQuery = "SELECT id FROM purchases WHERE purchase_number = @PurchaseNumber";
+            Logger.Debug($"SQL-запрос: {selectQuery}");
             return dbConnection.QueryFirstOrDefault<int?>(selectQuery, new { PurchaseNumber = purchaseNumber }, transaction);
         }
 
@@ -135,9 +135,10 @@ namespace PurchaseLoaderApp
         private void InsertPurchase(Purchase purchase, IDbConnection dbConnection, IDbTransaction transaction)
         {
             string insertQuery = @"
-                INSERT INTO purchases (purchase_number, purchase_name, starting_price, publication_date, purchase_object_info)
-                VALUES (@PurchaseNumber, @PurchaseName, @StartingPrice, @PublicationDate, @PurchaseObjectInfo)
+                INSERT INTO purchases (purchase_number, purchase_name, starting_price, publication_date)
+                VALUES (@PurchaseNumber, @PurchaseName, @StartingPrice, @PublicationDate)
                 RETURNING id";
+            Logger.Debug($"SQL-запрос: {insertQuery}");
             purchase.Id = dbConnection.ExecuteScalar<int>(insertQuery, purchase, transaction);
             Logger.Debug($"Закупка с номером {purchase.PurchaseNumber} вставлена с ID: {purchase.Id}");
         }
@@ -156,15 +157,15 @@ namespace PurchaseLoaderApp
                 UPDATE purchases
                 SET purchase_name = @PurchaseName,
                     starting_price = @StartingPrice,
-                    publication_date = @PublicationDate,
-                    purchase_object_info = @PurchaseObjectInfo
+                    publication_date = @PublicationDate
                 WHERE id = @Id";
+            Logger.Debug($"SQL-запрос: {updateQuery}");
             dbConnection.Execute(updateQuery, purchase, transaction);
             Logger.Debug($"Закупка с номером {purchase.PurchaseNumber} обновлена.");
         }
 
         /// <summary>
-        /// Вставляет заказчиков, связанных с закупкой.
+        /// Вставляет заказчиков, связанных с закупкой, с проверкой уникальности по ИНН.
         /// </summary>
         /// <param name="purchase">Объект закупки с заказчиками.</param>
         /// <param name="dbConnection">Соединение с базой данных.</param>
@@ -177,27 +178,35 @@ namespace PurchaseLoaderApp
                 return;
             }
 
-            string insertQuery = @"
-                INSERT INTO customers (organization_name, inn, reg_num, cons_registry_num, purchase_id)
-                VALUES (@OrganizationName, @INN, @RegNum, @ConsRegistryNum, @PurchaseId)";
+            string checkCustomerQuery = @"
+        SELECT id 
+        FROM customers 
+        WHERE inn = @INN AND purchase_id = @PurchaseId";
+
+            string insertCustomerQuery = @"
+        INSERT INTO customers (organization_name, inn, purchase_id)
+        VALUES (@OrganizationName, @INN, @PurchaseId)";
+
             foreach (var customer in purchase.Customers)
             {
                 customer.PurchaseId = purchase.Id;
-                dbConnection.Execute(insertQuery, customer, transaction);
-                Logger.Debug($"Заказчик {customer.OrganizationName} добавлен для закупки с ID: {purchase.Id}");
+
+                // Проверяем, существует ли заказчик с таким ИНН и для той же закупки
+                var existingCustomerId = dbConnection.QueryFirstOrDefault<int?>(checkCustomerQuery, customer, transaction);
+
+                if (existingCustomerId == null)
+                {
+                    // Если заказчика нет, добавляем его
+                    Logger.Debug($"Добавление заказчика с ИНН {customer.INN} для закупки ID: {purchase.Id}");
+                    dbConnection.Execute(insertCustomerQuery, customer, transaction);
+                    Logger.Debug($"Заказчик {customer.OrganizationName} добавлен для закупки с ID: {purchase.Id}");
+                }
+                else
+                {
+                    Logger.Debug($"Заказчик с ИНН {customer.INN} уже существует для закупки ID: {purchase.Id}. Пропускаем вставку.");
+                }
             }
         }
 
-        /// <summary>
-        /// Обрезает строку до указанной длины.
-        /// </summary>
-        /// <param name="value">Строка для обрезки.</param>
-        /// <param name="maxLength">Максимальная длина строки.</param>
-        /// <returns>Обрезанная строка.</returns>
-        private string TruncateString(string value, int maxLength)
-        {
-            if (string.IsNullOrEmpty(value)) return value;
-            return value.Length > maxLength ? value.Substring(0, maxLength) : value;
-        }
     }
 }

@@ -65,7 +65,7 @@ namespace PurchaseLoaderApp.Loaders
                         CultureInfo.InvariantCulture,
                         DateTimeStyles.AssumeLocal
                     ),
-                    PurchaseObjectInfo = notification.Element(ns + "purchaseObjectInfo")?.Value,
+        
                     Customers = ExtractCustomers(notification, ns)
                 };
 
@@ -107,8 +107,6 @@ namespace PurchaseLoaderApp.Loaders
                     {
                         var customer = new Customer
                         {
-                            RegNum = customerElement.Element(ns + "regNum")?.Value,
-                            ConsRegistryNum = customerElement.Element(ns + "consRegistryNum")?.Value,
                             OrganizationName = customerElement.Element(ns + "fullName")?.Value,
                             INN = customerElement.Element(ns + "INN")?.Value,
                         };
