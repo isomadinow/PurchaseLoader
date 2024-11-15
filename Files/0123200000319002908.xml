@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:export xmlns:ns5="http://zakupki.gov.ru/oos/CPtypes/1" xmlns="http://zakupki.gov.ru/oos/types/1" xmlns:ns6="http://zakupki.gov.ru/oos/pprf615types/1" xmlns:ns7="http://zakupki.gov.ru/oos/EPtypes/1" xmlns:ns8="http://zakupki.gov.ru/oos/printform/1" xmlns:ns9="http://zakupki.gov.ru/oos/control99/1" xmlns:ns2="http://zakupki.gov.ru/oos/export/1" xmlns:ns3="http://zakupki.gov.ru/oos/common/1" xmlns:ns4="http://zakupki.gov.ru/oos/base/1">
+    <ns2:fcsNotificationEF schemeVersion="9.2">
+        <id>21649964</id>
+        <purchaseNumber>0123200000319002908</purchaseNumber>
+        <directDate>2019-09-25T07:38:16+09:00</directDate>
+        <docPublishDate>2019-09-25T14:55:55.608+09:00</docPublishDate>
+        <docNumber>№0123200000319002908</docNumber>
+        <href>http://zakupki.gov.ru/epz/order/notice/ea44/view/common-info.html?regNumber=0123200000319002908</href>
+        <printForm>
+            <url>http://zakupki.gov.ru/epz/order/notice/printForm/viewXml.html?noticeId=21649964</url>
+            <signature type="CAdES-BES">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</signature>
+        </printForm>
+        <purchaseObjectInfo>Поставка изделий медицинского назначения</purchaseObjectInfo>
+        <purchaseResponsible>
+            <responsibleOrg>
+                <regNum>01232000003</regNum>
+                <consRegistryNum>10201676</consRegistryNum>
+                <fullName>УПРАВЛЕНИЕ ГОСУДАРСТВЕННОГО ЗАКАЗА АМУРСКОЙ ОБЛАСТИ</fullName>
+                <postAddress>Российская Федерация, 675023, Амурская обл, Благовещенск г, Ленина ул, 135</postAddress>
+                <factAddress>Российская Федерация, 675000, Амурская обл, Благовещенск г, УЛИЦА ЛЕНИНА, 135</factAddress>
+                <INN>2801138822</INN>
+                <KPP>280101001</KPP>
+            </responsibleOrg>
+            <responsibleRole>ORA</responsibleRole>
+            <responsibleInfo>
+                <orgPostAddress>Российская Федерация, 675023, Амурская обл, Благовещенск г, Ленина ул, 135</orgPostAddress>
+                <orgFactAddress>Российская Федерация, 675000, Амурская обл, Благовещенск г, УЛИЦА ЛЕНИНА, 135</orgFactAddress>
+                <contactPerson>
+                    <lastName>Зверева</lastName>
+                    <firstName>Елена</firstName>
+                    <middleName>Владимировна</middleName>
+                </contactPerson>
+                <contactEMail>zvereva@gz.amurobl.ru</contactEMail>
+                <contactPhone>+7 4162 224493</contactPhone>
+                <contactFax>+7 4162 224474</contactFax>
+            </responsibleInfo>
+        </purchaseResponsible>
+        <placingWay>
+            <code>EAP44</code>
+            <name>Электронный аукцион</name>
+        </placingWay>
+        <contractConclusionOnSt83Ch2>true</contractConclusionOnSt83Ch2>
+        <ETP>
+            <code>ETP_RTS</code>
+            <name>РТС-тендер</name>
+            <url>http://www.rts-tender.ru</url>
+        </ETP>
+        <procedureInfo>
+            <collecting>
+                <startDate>2019-09-25T14:55:55+09:00</startDate>
+                <place>http://www.rts-tender.ru</place>
+                <order>В соответствии с Федеральным законом «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд» от 05.04.2013 № 44-ФЗ</order>
+                <endDate>2019-10-04T08:00:00+09:00</endDate>
+            </collecting>
+            <scoring>
+                <date>2019-10-07T00:00:00+09:00</date>
+            </scoring>
+            <bidding>
+                <date>2019-10-08T00:00:00+09:00</date>
+            </bidding>
+        </procedureInfo>
+        <lot>
+            <maxPrice>836805.6</maxPrice>
+            <currency>
+                <code>RUB</code>
+                <name>Российский рубль</name>
+            </currency>
+            <financeSource>Фонд обязательного медицинского страхования, Средства бюджетных учреждений</financeSource>
+            <quantityUndefined>false</quantityUndefined>
+            <customerRequirements>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000458</regNum>
+                        <consRegistryNum>10203705</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СКОВОРОДИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>29140</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г.Сковородино, ул.Победы, д.10</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>В течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>291.40</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002141</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>1457.00</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002141</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192282600268628260100102030012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330004580020001</plan2017Number>
+                        <position2017Number>2019032330004580020001790001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03232000153</regNum>
+                        <consRegistryNum>10202937</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АМУРСКИЙ ОБЛАСТНОЙ ПРОТИВОТУБЕРКУЛЕЗНЫЙ ДИСПАНСЕР"</fullName>
+                    </customer>
+                    <maxPrice>58280</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г.Благовещенск, ул.Литейная, 5</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>582.80</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000871</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>2914.00</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000871</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280103214228010100103050012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032320001530010001</plan2017Number>
+                        <position2017Number>2019032320001530010002870001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000408</regNum>
+                        <consRegistryNum>102J0042</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "БУРЕЙСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>62145</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, Бурейский район, п.Новобурейский, ул. Комсомольская, 11,(склад)</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>В течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>621.45</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002011</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>3107.25</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002011</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192281300056128130100101220012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330004080010001</plan2017Number>
+                        <position2017Number>2019032330004080010001210001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>согласно аукционной документации</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000427</regNum>
+                        <consRegistryNum>10203703</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АРХАРИНСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>61150</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, п. Архара, ул. Восточная 8, первый этаж, склад.</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>611.50</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001961</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>3057.50</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001961</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192281000188828100100101020010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330004270010001</plan2017Number>
+                        <position2017Number>2019032330004270010000900001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000841</regNum>
+                        <consRegistryNum>10203001</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>228649</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г. Свободный, ул. Луговая, д.5</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>2286.49</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000461</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>11432.45</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000461</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280703398528070100103790010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330008410010001</plan2017Number>
+                        <position2017Number>2019032330008410010003310001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000046</regNum>
+                        <consRegistryNum>102J0030</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СТАНЦИЯ СКОРОЙ МЕДИЦИНСКОЙ ПОМОЩИ Г. БЛАГОВЕЩЕНСКА"</fullName>
+                    </customer>
+                    <maxPrice>57615</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г. Благовещенск, ул. Калинина, дом 82, в рабочие дни с 09:00 до 16:00 часов, обеденный перерыв с 12:00 до 13:00.</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>576.15</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001951</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>2880.75</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001951</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280102753728010100101680010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330000460010001</plan2017Number>
+                        <position2017Number>2019032330000460010001680001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Качество товара и условия транспортировки должны соответствовать техническим регламентам, стандартам, санитарно-эпидемиологическим правилам и иным нормативам, являющимися обязательными в отношении данного вида товара в соответствии с законодательными и подзаконными актами, действующими на территории Российской Федерации.</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000705</regNum>
+                        <consRegistryNum>10203000</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ ГОРОДСКАЯ ПОЛИКЛИНИКА"</fullName>
+                    </customer>
+                    <maxPrice>81125</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>676450, Российская Федерация, Амурская область, г.Свободный, ул. Орджоникидзе, 78</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>811.25</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000441</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>4056.25</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000441</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280703383328070100101750010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330007050010001</plan2017Number>
+                        <position2017Number>2019032330007050010001400001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000425</regNum>
+                        <consRegistryNum>102J0041</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ОКТЯБРЬСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>44155</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, Октябрьский район, с .Екатеринославка, ул. Ленина 98</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>441.55</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002081</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>2207.75</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002081</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192282100009028210100102220012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330004250010001</plan2017Number>
+                        <position2017Number>2019032330004250010001810001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000087</regNum>
+                        <consRegistryNum>10203716</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ГОРОДСКАЯ ПОЛИКЛИНИКА №2"</fullName>
+                    </customer>
+                    <maxPrice>3865</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г.Благовещенск, ул. 50 лет Октября, д.195/1</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>38.65</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001891</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>193.25</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918001891</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280112602328010100100750012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330000870010001</plan2017Number>
+                        <position2017Number>2019032330000870010000760001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000060</regNum>
+                        <consRegistryNum>10203733</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "РАЙЧИХИНСКАЯ ГОРОДСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>72850</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>676770, Российская Федерация, Амурская область, г.Райчихинск, ул.Центральная, д.7</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>728.50</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002091</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>3642.50</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002091</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280600076128060100102200012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330000600010001</plan2017Number>
+                        <position2017Number>2019032330000600010002290001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>В соответствии с документацией</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000461</regNum>
+                        <consRegistryNum>102J0055</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕРЫШЕВСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>49031</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>676355, Российская Федерация, Амурская область, Серышевский район, п.г.т. Серышево, ул.Ленина, д.10</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договорам,</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>490.31</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002131</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>2451.55</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002131</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192282400167028240100101090010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330004610010001</plan2017Number>
+                        <position2017Number>2019032330004610010001090001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Описание объекта закупки и объем поставки указаны в Техническом задании.</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000349</regNum>
+                        <consRegistryNum>10202983</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ШИМАНОВСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>49555</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, г.Шимановск, ул. Больничная, д.1</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>495.55</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000261</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>2477.75</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000261</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280900147428290100101210010000000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330003490010001</plan2017Number>
+                        <position2017Number>2019032330003490010001120001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>В соответствии с условиями документации</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03232000111</regNum>
+                        <consRegistryNum>102J0036</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АМУРСКИЙ ОБЛАСТНОЙ КОЖНО-ВЕНЕРОЛОГИЧЕСКИЙ ДИСПАНСЕР"</fullName>
+                    </customer>
+                    <maxPrice>10105.6</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>г.Благовещенск, Амурской области , ул. Новая ,41</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>101.06</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000691</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>505.28</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918000691</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192280103241728010100102520012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032320001110010001</plan2017Number>
+                        <position2017Number>2019032320001110010001900001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Изделия медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+                <customerRequirement>
+                    <customer>
+                        <regNum>03233000601</regNum>
+                        <consRegistryNum>10203708</consRegistryNum>
+                        <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕЛЕМДЖИНСКАЯ БОЛЬНИЦА"</fullName>
+                    </customer>
+                    <maxPrice>29140</maxPrice>
+                    <kladrPlaces>
+                        <kladrPlace>
+                            <deliveryPlace>Амурская область, Селемджинский район, пгт Экимчан, ул. Линейная, д.15.</deliveryPlace>
+                        </kladrPlace>
+                    </kladrPlaces>
+                    <deliveryTerm>в течение 20 (двадцати) календарных дней с момента заключения Договора</deliveryTerm>
+                    <applicationGuarantee>
+                        <amount>291.40</amount>
+                        <procedureInfo>в соответствии с 44-ФЗ</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002121</personalAccount>
+                        <bik>041012001</bik>
+                    </applicationGuarantee>
+                    <contractGuarantee>
+                        <amount>1457.00</amount>
+                        <part>5.0</part>
+                        <procedureInfo>Исполнение контракта может обеспечиваться предоставлением банковской гарантии, выданной банком и соответствующей требованиям статьи 45 Федерального закона от 05.04.2013 № 44-ФЗ, или внесением денежных средств на указанный заказчиком счет</procedureInfo>
+                        <settlementAccount>40601810700003000001</settlementAccount>
+                        <personalAccount>20918002121</personalAccount>
+                        <bik>041012001</bik>
+                    </contractGuarantee>
+                    <purchaseCode>192282500103028250100100560012120000</purchaseCode>
+                    <tenderPlanInfo>
+                        <plan2017Number>2019032330006010010001</plan2017Number>
+                        <position2017Number>2019032330006010010000550001</position2017Number>
+                    </tenderPlanInfo>
+                    <purchaseObjectDescription>Поставка изделий медицинского назначения</purchaseObjectDescription>
+                </customerRequirement>
+            </customerRequirements>
+            <purchaseObjects>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.24.131</code>
+                        <name>Бинты марлевые медицинские</name>
+                    </OKPD2>
+                    <name>Бинт марлевый нестерильный</name>
+                    <OKEI>
+                        <code>796</code>
+                        <nationalCode>ШТ</nationalCode>
+                        <fullName>Штука</fullName>
+                    </OKEI>
+                    <customerQuantities>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000427</regNum>
+                                <consRegistryNum>10203703</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АРХАРИНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000046</regNum>
+                                <consRegistryNum>102J0030</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СТАНЦИЯ СКОРОЙ МЕДИЦИНСКОЙ ПОМОЩИ Г. БЛАГОВЕЩЕНСКА"</fullName>
+                            </customer>
+                            <quantity>3500</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000705</regNum>
+                                <consRegistryNum>10203000</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ ГОРОДСКАЯ ПОЛИКЛИНИКА"</fullName>
+                            </customer>
+                            <quantity>5000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000461</regNum>
+                                <consRegistryNum>102J0055</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕРЫШЕВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2600</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03232000153</regNum>
+                                <consRegistryNum>10202937</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АМУРСКИЙ ОБЛАСТНОЙ ПРОТИВОТУБЕРКУЛЕЗНЫЙ ДИСПАНСЕР"</fullName>
+                            </customer>
+                            <quantity>4000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000425</regNum>
+                                <consRegistryNum>102J0041</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ОКТЯБРЬСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2500</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000408</regNum>
+                                <consRegistryNum>102J0042</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "БУРЕЙСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>4000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000060</regNum>
+                                <consRegistryNum>10203733</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "РАЙЧИХИНСКАЯ ГОРОДСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>5000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000601</regNum>
+                                <consRegistryNum>10203708</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕЛЕМДЖИНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000458</regNum>
+                                <consRegistryNum>10203705</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СКОВОРОДИНСКАЯ ЦЕНТРАЛЬНАЯ РАЙОННАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03232000111</regNum>
+                                <consRegistryNum>102J0036</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АМУРСКИЙ ОБЛАСТНОЙ КОЖНО-ВЕНЕРОЛОГИЧЕСКИЙ ДИСПАНСЕР"</fullName>
+                            </customer>
+                            <quantity>580</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000349</regNum>
+                                <consRegistryNum>10202983</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ШИМАНОВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000841</regNum>
+                                <consRegistryNum>10203001</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>15250</quantity>
+                        </customerQuantity>
+                    </customerQuantities>
+                    <price>14.57</price>
+                    <quantity>
+                        <value>50430</value>
+                    </quantity>
+                    <sum>734765.1</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.24.131</code>
+                        <name>Бинты марлевые медицинские</name>
+                    </OKPD2>
+                    <name>Бинт марлевый нестерильный</name>
+                    <OKEI>
+                        <code>796</code>
+                        <nationalCode>ШТ</nationalCode>
+                        <fullName>Штука</fullName>
+                    </OKEI>
+                    <customerQuantities>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000841</regNum>
+                                <consRegistryNum>10203001</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>300</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000427</regNum>
+                                <consRegistryNum>10203703</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АРХАРИНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>2000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000425</regNum>
+                                <consRegistryNum>102J0041</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ОКТЯБРЬСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>1000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000408</regNum>
+                                <consRegistryNum>102J0042</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "БУРЕЙСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>500</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000461</regNum>
+                                <consRegistryNum>102J0055</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕРЫШЕВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>800</quantity>
+                        </customerQuantity>
+                    </customerQuantities>
+                    <price>7.73</price>
+                    <quantity>
+                        <value>4600</value>
+                    </quantity>
+                    <sum>35558</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <KTRU>
+                        <code>21.20.24.131-00000002</code>
+                        <name>Бинт марлевый, стерильный</name>
+                    </KTRU>
+                    <name>Бинт марлевый, стерильный</name>
+                    <OKEI>
+                        <code>796</code>
+                        <nationalCode>ШТ</nationalCode>
+                        <fullName>Штука</fullName>
+                    </OKEI>
+                    <customerQuantities>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000046</regNum>
+                                <consRegistryNum>102J0030</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СТАНЦИЯ СКОРОЙ МЕДИЦИНСКОЙ ПОМОЩИ Г. БЛАГОВЕЩЕНСКА"</fullName>
+                            </customer>
+                            <quantity>400</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000461</regNum>
+                                <consRegistryNum>102J0055</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СЕРЫШЕВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>300</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000427</regNum>
+                                <consRegistryNum>10203703</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АРХАРИНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>1000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000705</regNum>
+                                <consRegistryNum>10203000</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ ГОРОДСКАЯ ПОЛИКЛИНИКА"</fullName>
+                            </customer>
+                            <quantity>500</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000841</regNum>
+                                <consRegistryNum>10203001</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "СВОБОДНЕНСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>250</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000349</regNum>
+                                <consRegistryNum>10202983</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ШИМАНОВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>1000</quantity>
+                        </customerQuantity>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03232000111</regNum>
+                                <consRegistryNum>102J0036</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "АМУРСКИЙ ОБЛАСТНОЙ КОЖНО-ВЕНЕРОЛОГИЧЕСКИЙ ДИСПАНСЕР"</fullName>
+                            </customer>
+                            <quantity>100</quantity>
+                        </customerQuantity>
+                    </customerQuantities>
+                    <price>16.55</price>
+                    <quantity>
+                        <value>3550</value>
+                    </quantity>
+                    <sum>58752.5</sum>
+                    <isMedicalProduct>true</isMedicalProduct>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.24.131</code>
+                        <name>Бинты марлевые медицинские</name>
+                    </OKPD2>
+                    <name>Бинт марлевый  нестерильный</name>
+                    <OKEI>
+                        <code>796</code>
+                        <nationalCode>ШТ</nationalCode>
+                        <fullName>Штука</fullName>
+                    </OKEI>
+                    <customerQuantities>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000349</regNum>
+                                <consRegistryNum>10202983</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ШИМАНОВСКАЯ БОЛЬНИЦА"</fullName>
+                            </customer>
+                            <quantity>500</quantity>
+                        </customerQuantity>
+                    </customerQuantities>
+                    <price>7.73</price>
+                    <quantity>
+                        <value>500</value>
+                    </quantity>
+                    <sum>3865</sum>
+                </purchaseObject>
+                <purchaseObject>
+                    <OKPD2>
+                        <code>21.20.24.131</code>
+                        <name>Бинты марлевые медицинские</name>
+                    </OKPD2>
+                    <name>Бинт марлевый нестерильный</name>
+                    <OKEI>
+                        <code>796</code>
+                        <nationalCode>ШТ</nationalCode>
+                        <fullName>Штука</fullName>
+                    </OKEI>
+                    <customerQuantities>
+                        <customerQuantity>
+                            <customer>
+                                <regNum>03233000087</regNum>
+                                <consRegistryNum>10203716</consRegistryNum>
+                                <fullName>ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ АМУРСКОЙ ОБЛАСТИ "ГОРОДСКАЯ ПОЛИКЛИНИКА №2"</fullName>
+                            </customer>
+                            <quantity>500</quantity>
+                        </customerQuantity>
+                    </customerQuantities>
+                    <price>7.73</price>
+                    <quantity>
+                        <value>500</value>
+                    </quantity>
+                    <sum>3865</sum>
+                </purchaseObject>
+                <totalSum>836805.6</totalSum>
+            </purchaseObjects>
+            <preferenses>
+                <preferense>
+                    <shortName>MP44</shortName>
+                    <name>Субъектам малого предпринимательства, социально ориентированным некоммерческим организациям</name>
+                </preferense>
+                <preferense>
+                    <shortName>RBK126</shortName>
+                    <name>Участникам, заявки или окончательные предложения которых содержат предложения о поставке товаров в соответствии с приказом Минфина России № 126н от 04.06.2018</name>
+                    <prefValue>15.0</prefValue>
+                </preferense>
+            </preferenses>
+            <requirements>
+                <requirement>
+                    <shortName>ET44</shortName>
+                    <name>Единые требования к участникам (в соответствии с частью 1 Статьи 31 Федерального закона № 44-ФЗ)</name>
+                    <content>1)соответствие требованиям, установленным в соответствии с законодательством Российской Федерации к лицам, осуществляющим поставку товара, выполнение работы, оказание услуги, являющихся объектом закупки: 
+2) непроведение ликвидации участника закупки - юридического лица и отсутствие решения арбитражного суда о признании участника закупки - юридического лица или индивидуального предпринимателя несостоятельным (банкротом) и об открытии конкурсного производства; 3) неприостановление деятельности участника закупки в порядке, установленном КоАП РФ, на дату подачи заявки на участие в закупке; 4) отсутствие у участника закупки недоимки по налогам, сборам, задолженности по иным обязательным платежам в бюджеты бюджетной системы РФ; 5) отсутствие у участника закупки - физического лица либо у руководителя, членов коллегиального исполнительного органа, лица, исполняющего функции единоличного исполнительного органа или главного бухгалтера юридического лица - участника закупки судимости за преступления в сфере экономики и (или) преступления, предусмотренные ст. ст. 289, 290, 291, 291.1 УК РФ (за исключением лиц, у которых такая судимость погашена или снята); 6) не привлечение участника закупки - юридического лица в течение двух лет до момента подачи заявки на участие в закупке к административной ответственности по ст. 19.28 КоАП РФ; 7) отсутствие между участником закупки и заказчиком конфликта интересов; 8) участник закупки не является офшорной компанией.9) отсутствие у участника закупки ограничений для участия в закупках, установленных законодательством Российской Федерации</content>
+                </requirement>
+                <requirement>
+                    <shortName>TR442</shortName>
+                    <name>Требования к участникам закупок в соответствии с частью 1.1 статьи 31 Федерального закона № 44-ФЗ</name>
+                </requirement>
+            </requirements>
+            <restrictions>
+                <restriction>
+                    <shortName>MB44330</shortName>
+                    <name>Закупка у субъектов малого предпринимательства и социально ориентированных некоммерческих организаций</name>
+                </restriction>
+                <restriction>
+                    <shortName>JB2149</shortName>
+                    <name>Запрет на допуск товаров, услуг при осуществлении закупок, а также ограничения и условия допуска в соответствии с требованиями, установленными статьей 14 Федерального закона № 44-ФЗ</name>
+                    <restrictionsSt14>
+                        <ns3:restrictionSt14>
+                            <ns3:requirementsType>
+                                <ns3:requirementType>
+                                    <ns3:type>AC</ns3:type>
+                                </ns3:requirementType>
+                            </ns3:requirementsType>
+                            <ns3:NPAInfo>
+                                <ns4:code>1</ns4:code>
+                                <ns4:name>Участникам, заявки или окончательные предложения которых содержат предложения о поставке товаров в соответствии с приказом Минфина России № 126н от 04.06.2018</ns4:name>
+                                <ns4:shortName>Приказ Минфина 126н от 04.06.2018</ns4:shortName>
+                            </ns3:NPAInfo>
+                        </ns3:restrictionSt14>
+                        <ns3:restrictionSt14>
+                            <ns3:requirementsType>
+                                <ns3:requirementType>
+                                    <ns3:type>RA</ns3:type>
+                                </ns3:requirementType>
+                            </ns3:requirementsType>
+                            <ns3:NPAInfo>
+                                <ns4:code>11</ns4:code>
+                                <ns4:name>Постановление Правительства РФ от 05.02.2015 N 102 "Об ограничениях и условиях допуска отдельных видов медицинских изделий, происходящих из иностранных государств, для целей осуществления закупок для обеспечения государственных и муниципальных нужд"</ns4:name>
+                                <ns4:shortName>Постановление Правительства РФ от 05.02.2015 N 102</ns4:shortName>
+                            </ns3:NPAInfo>
+                        </ns3:restrictionSt14>
+                    </restrictionsSt14>
+                </restriction>
+            </restrictions>
+            <addInfo>Информация об обеспечении исполнения гарантийных обязательств указана в разделе II Информационная карта ДЭА</addInfo>
+            <mustPublicDiscussion>false</mustPublicDiscussion>
+        </lot>
+        <attachments>
+            <attachment>
+                <publishedContentId>C7BBB7F5FA0E4D2C899ADB00E7A3D11A</publishedContentId>
+                <fileName>ДЭА бинты.doc</fileName>
+                <fileSize>1.96 Мб</fileSize>
+                <docDescription>ДЭА бинты.doc</docDescription>
+                <url>http://zakupki.gov.ru/44fz/filestore/public/1.0/download/priz/file.html?uid=C7BBB7F5FA0E4D2C899ADB00E7A3D11A</url>
+                <cryptoSigns>
+                    <signature type="CAdES-BES">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</signature>
+                </cryptoSigns>
+            </attachment>
+        </attachments>
+        <documentation>
+            <purchaseObjectsCh9St37>false</purchaseObjectsCh9St37>
+            <modifiable>true</modifiable>
+            <clarificationInfo>
+                <startDate>2019-09-25T08:55:55+09:00</startDate>
+                <filledManuallyStartDate>false</filledManuallyStartDate>
+                <endDate>2019-10-02T23:59:00+09:00</endDate>
+                <deliveryProcedure>в соответствии с требованиями ч.3-6 ст.65 ФЗ № 44</deliveryProcedure>
+            </clarificationInfo>
+            <onesideRejectionCh9St95>true</onesideRejectionCh9St95>
+            <printFormInfo>
+                <ns3:url>http://zakupki.gov.ru/epz/order/notice/printForm/viewXml.html?noticeId=21649964</ns3:url>
+                <ns3:signature type="CAdES-BES">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</ns3:signature>
+            </printFormInfo>
+        </documentation>
+    </ns2:fcsNotificationEF>
+</ns2:export>
