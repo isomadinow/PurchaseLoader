@@ -68,8 +68,8 @@ namespace PurchaseLoaderApp
                 }
 
                 //TODO: Сделать добавление к БД. 
-                // var databaseService = new DatabaseService(); 
-                // databaseService.SavePurchase(purchaseData);
+                var databaseService = new DatabaseService();
+                databaseService.SavePurchase(purchaseData);
 
                 Logger.Info("Приложение успешно завершило работу.");
             }
