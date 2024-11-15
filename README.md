@@ -109,7 +109,7 @@ PurchaseLoaderApp.exe --type web --source "https://example.com" --debug
 
 #### Примеры:
 1. Загрузка данных с веб-страницы:
-   ``shell
+   ```shell
    .\PurchaseLoaderApp.exe --type web --source "https://tenmon.ru/1/0123200000319002908"
    ```
 
