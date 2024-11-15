@@ -121,7 +121,7 @@ PurchaseLoader
 ### Запуск
 Перейдите в папку `bin\Debug` и выполните команду:
 ```bash
-.\PurchaseLoaderApp.exe --type web --source "https://tenmon.ru/1/0123200000319002908"" --debug
+.\PurchaseLoaderApp.exe --type web --source "https://tenmon.ru/1/0123200000319002908" --debug
 ```
 
 ---
